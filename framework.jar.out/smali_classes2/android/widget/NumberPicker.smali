@@ -452,7 +452,7 @@
 
     const/high16 v16, 0x40000000    # 2.0f
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/NumberPicker;->getResources()Landroid/content/res/Resources;
 
     move-result-object v17
 
@@ -483,7 +483,7 @@
 
     const/high16 v16, 0x42400000    # 48.0f
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/NumberPicker;->getResources()Landroid/content/res/Resources;
 
     move-result-object v17
 
@@ -724,10 +724,10 @@
     :goto_2
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v15}, Landroid/view/View;->setWillNotDraw(Z)V
+    invoke-virtual {v0, v15}, Landroid/widget/NumberPicker;->setWillNotDraw(Z)V
 
     .line 661
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/NumberPicker;->getContext()Landroid/content/Context;
 
     move-result-object v15
 
@@ -775,7 +775,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v15}, Landroid/widget/NumberPicker;->findViewById(I)Landroid/view/View;
 
     move-result-object v15
 
@@ -790,14 +790,14 @@
 
     iget-object v15, v0, Landroid/widget/NumberPicker;->mIncrementButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v15, v12}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v15, v12}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 694
     move-object/from16 v0, p0
 
     iget-object v15, v0, Landroid/widget/NumberPicker;->mIncrementButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v15, v13}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {v15, v13}, Landroid/widget/ImageButton;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     .line 700
     :goto_3
@@ -812,7 +812,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v15}, Landroid/widget/NumberPicker;->findViewById(I)Landroid/view/View;
 
     move-result-object v15
 
@@ -827,14 +827,14 @@
 
     iget-object v15, v0, Landroid/widget/NumberPicker;->mDecrementButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v15, v12}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v15, v12}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 703
     move-object/from16 v0, p0
 
     iget-object v15, v0, Landroid/widget/NumberPicker;->mDecrementButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v15, v13}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {v15, v13}, Landroid/widget/ImageButton;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     .line 709
     :goto_4
@@ -842,7 +842,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v15}, Landroid/widget/NumberPicker;->findViewById(I)Landroid/view/View;
 
     move-result-object v15
 
@@ -865,7 +865,7 @@
 
     invoke-direct {v0, v1}, Landroid/widget/NumberPicker$3;-><init>(Landroid/widget/NumberPicker;)V
 
-    invoke-virtual/range {v15 .. v16}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-virtual/range {v15 .. v16}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 720
     move-object/from16 v0, p0
@@ -888,7 +888,7 @@
 
     aput-object v18, v16, v17
 
-    invoke-virtual/range {v15 .. v16}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual/range {v15 .. v16}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     .line 724
     move-object/from16 v0, p0
@@ -897,7 +897,7 @@
 
     const/16 v16, 0x2
 
-    invoke-virtual/range {v15 .. v16}, Landroid/widget/TextView;->setRawInputType(I)V
+    invoke-virtual/range {v15 .. v16}, Landroid/widget/EditText;->setRawInputType(I)V
 
     .line 725
     move-object/from16 v0, p0
@@ -906,7 +906,7 @@
 
     const/16 v16, 0x6
 
-    invoke-virtual/range {v15 .. v16}, Landroid/widget/TextView;->setImeOptions(I)V
+    invoke-virtual/range {v15 .. v16}, Landroid/widget/EditText;->setImeOptions(I)V
 
     .line 728
     invoke-static/range {p1 .. p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -948,7 +948,7 @@
 
     iget-object v15, v0, Landroid/widget/NumberPicker;->mInputText:Landroid/widget/EditText;
 
-    invoke-virtual {v15}, Landroid/widget/TextView;->getTextSize()F
+    invoke-virtual {v15}, Landroid/widget/EditText;->getTextSize()F
 
     move-result v15
 
@@ -988,7 +988,7 @@
 
     iget-object v15, v0, Landroid/widget/NumberPicker;->mInputText:Landroid/widget/EditText;
 
-    invoke-virtual {v15}, Landroid/widget/TextView;->getTypeface()Landroid/graphics/Typeface;
+    invoke-virtual {v15}, Landroid/widget/EditText;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v15
 
@@ -999,7 +999,7 @@
 
     iget-object v15, v0, Landroid/widget/NumberPicker;->mInputText:Landroid/widget/EditText;
 
-    invoke-virtual {v15}, Landroid/widget/TextView;->getTextColors()Landroid/content/res/ColorStateList;
+    invoke-virtual {v15}, Landroid/widget/EditText;->getTextColors()Landroid/content/res/ColorStateList;
 
     move-result-object v6
 
@@ -1027,7 +1027,7 @@
     .line 747
     new-instance v15, Landroid/widget/Scroller;
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/NumberPicker;->getContext()Landroid/content/Context;
 
     move-result-object v16
 
@@ -1044,7 +1044,7 @@
     .line 748
     new-instance v15, Landroid/widget/Scroller;
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/NumberPicker;->getContext()Landroid/content/Context;
 
     move-result-object v16
 
@@ -1064,7 +1064,7 @@
     invoke-direct/range {p0 .. p0}, Landroid/widget/NumberPicker;->updateInputTextView()Z
 
     .line 753
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getImportantForAccessibility()I
+    invoke-virtual/range {p0 .. p0}, Landroid/widget/NumberPicker;->getImportantForAccessibility()I
 
     move-result v15
 
@@ -1075,7 +1075,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v15}, Landroid/view/View;->setImportantForAccessibility(I)V
+    invoke-virtual {v0, v15}, Landroid/widget/NumberPicker;->setImportantForAccessibility(I)V
 
     .line 756
     :cond_3

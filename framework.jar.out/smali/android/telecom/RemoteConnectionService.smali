@@ -70,9 +70,7 @@
 
     move-object v0, v1
 
-    nop
-
-    nop
+    check-cast v0, Landroid/telecom/ConnectionRequest;
 
     invoke-direct {v2, v3, v1, v0}, Landroid/telecom/RemoteConnection;-><init>(Ljava/lang/String;Lcom/android/internal/telecom/IConnectionService;Landroid/telecom/ConnectionRequest;)V
 

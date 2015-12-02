@@ -3,11 +3,11 @@
 .source "MenuPopupHelper.java"
 
 # interfaces
-.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 .implements Landroid/view/View$OnKeyListener;
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-.implements Landroid/widget/AdapterView$OnItemClickListener;
 .implements Landroid/widget/PopupWindow$OnDismissListener;
+.implements Landroid/view/View$OnAttachStateChangeListener;
 .implements Lcom/android/internal/view/menu/MenuPresenter;
 
 

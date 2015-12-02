@@ -3,9 +3,9 @@
 .source "ViewRootImpl.java"
 
 # interfaces
-.implements Landroid/view/HardwareRenderer$HardwareDrawCallbacks;
-.implements Landroid/view/View$AttachInfo$Callbacks;
 .implements Landroid/view/ViewParent;
+.implements Landroid/view/View$AttachInfo$Callbacks;
+.implements Landroid/view/HardwareRenderer$HardwareDrawCallbacks;
 
 
 # annotations

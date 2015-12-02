@@ -3,8 +3,8 @@
 .source "WindowManagerService.java"
 
 # interfaces
-.implements Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
 .implements Lcom/android/server/Watchdog$Monitor;
+.implements Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
 
 
 # annotations

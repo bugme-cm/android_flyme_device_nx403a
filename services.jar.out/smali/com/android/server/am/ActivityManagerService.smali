@@ -3,8 +3,8 @@
 .source "ActivityManagerService.java"
 
 # interfaces
-.implements Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;
 .implements Lcom/android/server/Watchdog$Monitor;
+.implements Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;
 
 
 # annotations
@@ -1999,14 +1999,14 @@
     .line 2192
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService;->mHandlerThread:Lcom/android/server/ServiceThread;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/server/ServiceThread;->start()V
 
     .line 2193
     new-instance v0, Lcom/android/server/am/ActivityManagerService$MainHandler;
 
     iget-object v1, p0, Lcom/android/server/am/ActivityManagerService;->mHandlerThread:Lcom/android/server/ServiceThread;
 
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+    invoke-virtual {v1}, Lcom/android/server/ServiceThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
@@ -2030,7 +2030,7 @@
 
     .line 2196
     .local v7, "cpuTrackerThread":Landroid/os/HandlerThread;
-    invoke-virtual {v7}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v7}, Landroid/os/HandlerThread;->start()V
 
     .line 2197
     new-instance v0, Lcom/android/server/am/ActivityManagerService$CpuTrackerHandler;

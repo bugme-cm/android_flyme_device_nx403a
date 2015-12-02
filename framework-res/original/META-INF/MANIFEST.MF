@@ -2546,7 +2546,7 @@ Name: res/drawable-xhdpi-v4/scrubber_control_to_pressed_mtrl_005.png
 SHA1-Digest: VyxMaY4GkM7F0rJ6OUhPiMeP/GU=
 
 Name: AndroidManifest.xml
-SHA1-Digest: CPOegc6Iyxlr1Wqam4iZQTrH4JQ=
+SHA1-Digest: giXVgh+qo3Lr0t5xPRRd65jSZ7Y=
 
 Name: res/drawable-xhdpi-v4/stat_sys_download_anim3.png
 SHA1-Digest: A8j2KDGadEbJBSfNDVWFY+HhbO4=

@@ -3,11 +3,11 @@
 .source "Activity.java"
 
 # interfaces
-.implements Landroid/content/ComponentCallbacks2;
-.implements Landroid/view/KeyEvent$Callback;
 .implements Landroid/view/LayoutInflater$Factory2;
-.implements Landroid/view/View$OnCreateContextMenuListener;
 .implements Landroid/view/Window$Callback;
+.implements Landroid/view/KeyEvent$Callback;
+.implements Landroid/view/View$OnCreateContextMenuListener;
+.implements Landroid/content/ComponentCallbacks2;
 .implements Landroid/view/Window$OnWindowDismissedCallback;
 
 

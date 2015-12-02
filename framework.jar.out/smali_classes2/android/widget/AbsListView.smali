@@ -5,8 +5,8 @@
 # interfaces
 .implements Landroid/text/TextWatcher;
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
-.implements Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;
 .implements Landroid/widget/Filter$FilterListener;
+.implements Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;
 .implements Landroid/widget/RemoteViewsAdapter$RemoteAdapterConnectionCallback;
 
 
