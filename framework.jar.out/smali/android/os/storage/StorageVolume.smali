@@ -586,6 +586,66 @@
     return v0
 .end method
 
+.method public getFatVolumeId()I
+    .locals 5
+
+    .prologue
+    const/4 v1, -0x1
+
+    .line 215
+    iget-object v2, p0, Landroid/os/storage/StorageVolume;->mUuid:Ljava/lang/String;
+
+    if-eqz v2, :cond_0
+
+    iget-object v2, p0, Landroid/os/storage/StorageVolume;->mUuid:Ljava/lang/String;
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    const/16 v3, 0x9
+
+    if-eq v2, v3, :cond_1
+
+    .line 221
+    :cond_0
+    :goto_0
+    return v1
+
+    .line 219
+    :cond_1
+    :try_start_0
+    iget-object v2, p0, Landroid/os/storage/StorageVolume;->mUuid:Ljava/lang/String;
+
+    const-string v3, "-"
+
+    const-string v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/16 v3, 0x10
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->parseLong(Ljava/lang/String;I)J
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-wide v2
+
+    long-to-int v1, v2
+
+    goto :goto_0
+
+    .line 220
+    :catch_0
+    move-exception v0
+
+    .line 221
+    .local v0, "e":Ljava/lang/NumberFormatException;
+    goto :goto_0
+.end method
+
 .method public getIsFormatting()Z
     .locals 1
 
